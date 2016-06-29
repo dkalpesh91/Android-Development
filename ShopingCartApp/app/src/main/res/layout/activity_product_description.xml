@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_above="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/ida_product_iv"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp" />
+
+            <RelativeLayout
+                android:id="@+id/ida_container_rl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ida_product_iv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp">
+
+                <LinearLayout
+                    android:id="@+id/ida_product_name_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/ida_product_static_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="Name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/ida_product_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="New Text"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ida_product_category_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ida_product_name_ll"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/ida_product_static_catagory_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ida_product_iv"
+                        android:layout_marginRight="15dp"
+                        android:text="Name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/ida_product_catagory_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="New Text"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ida_product_price_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ida_product_category_ll"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/ida_product_static_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:text="Name"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/ida_product_price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="New Text"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ida_product_description_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ida_container_rl"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/ida_product_static_description_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Description"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/ida_product_description_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ida_product_static_description_tv"
+                    android:layout_gravity="center"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="5dp"
+                    android:maxLines="5"
+                    android:text="New Text"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/button_selector"
+        android:text="BUY"
+        android:textColor="@color/text_white" />
+
+
+</RelativeLayout>
